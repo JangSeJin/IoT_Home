@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 기본배경색 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="line" >
+            <stroke
+                android:width="7dp"
+                android:color="#BDBDBD" />
+        </shape>
+    </item>
+
+    <!-- SET 후 색 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="line" >
+                <stroke
+                    android:width="7dp"
+                    android:color="#3399CC" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

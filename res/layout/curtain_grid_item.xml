@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutGrid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layoutDevice"
+        android:layout_width="fill_parent"
+        android:layout_height="370dp"
+        android:background="@drawable/style_radius_white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <android.widget.VerticalSeekBarWrapper
+            android:layout_width="wrap_content"
+            android:layout_height="300dp" >
+
+            <android.widget.VerticalSeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:max="10"
+                android:progressDrawable="@drawable/style_seekbar_progress"
+                android:thumb="@drawable/style_seekbar_thumb" />
+        </android.widget.VerticalSeekBarWrapper>
+
+        <TextView
+            android:id="@+id/txtNicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기기이름"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상태"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>
